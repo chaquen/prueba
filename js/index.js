@@ -130,7 +130,7 @@ function peticion_ajax(accion,datos,funcion){
                 // Formato de datos que se espera en la respuesta
                 dataType: "json",
                 // URL a la que se enviará la solicitud Ajax
-                url: "controlador/"+accion+"_controlador.php",
+                url: "controlador/controlador.php?_accion="+accion,
             })
              .done(function( data, textStatus, jqXHR ) {
                   if(funcion!=undefined){
